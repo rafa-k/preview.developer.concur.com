@@ -299,7 +299,20 @@ Error responses include a JSON body with additional details about the error.
 
 ### Body (JSON)
 
-Example:
+The error response is a JSON object containing a list of errors:
+
+| Field    | Type     | Description             |
+|----------|----------|-------------------------|
+| `errors` | `array`  | List of `Error` objects |
+
+#### Error
+
+| Field         | Type     |
+|---------------|----------|
+| `errorCode`   | `string` |
+| `errorMessage`| `string` |
+
+#### Example
 
 ```json
 {
